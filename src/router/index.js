@@ -23,6 +23,17 @@ const routes = [
     name: 'Secure',
     component: lazyLoad("Secure")
   },
+  {
+    path: '/login',
+    name: 'Login',
+    component: lazyLoad("Login")
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: lazyLoad("Dashboard")
+  }
+
 ]
 
 const router = createRouter({
