@@ -1,13 +1,15 @@
 <template>
-  <div id="app">
-    <AppLayout>
-      <router-view />
-          <!-- <router-link to="/">Home</router-link>  -->
-    </AppLayout>
+  <!-- <div id="app"> -->
+    <!-- <AppLayout>
+     
+          <router-link to="/">Home</router-link> 
+    </AppLayout> -->
 
     <!-- <router-link to="/about">About</router-link> -->
-  </div>
+      <router-view />
+  <!-- </div> -->
   <!-- <router-view/> -->
+ 
 </template>
 
 <style>
@@ -32,15 +34,16 @@
   color: #42b983;
 }
 </style>
-<script>
+// <script>
 
-export default {
-  name: "App",
 
-   computed:{
-    isLoading(){
-      return this.$store.state.loadingCounter !== 0
-    }
-  }
-};
-</script>
+// export default {
+//   name: "App",
+
+  //  computed:{
+  //   isLoading(){
+  //     return this.$store.state.loadingCounter !== 0
+  //   }
+  // }
+// };
+// </script>

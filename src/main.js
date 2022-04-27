@@ -7,3 +7,4 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // Vue.config.productionTip = false
 
 createApp(App).use(router).mount('#app')
+

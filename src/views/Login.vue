@@ -32,14 +32,16 @@ export default{
         }
     }, 
     methods: {
-        loginsubmit(e){
+        loginsubmit(){
             
             if (this.username != "" && this.password != ""){
 
                 if(this.username == "nayan" && this.password == "Nayan@123"){
-                        //  alert("Login successfull")
-                         this.$router.push({ name: "Dashboard" });
-                          e.preventDefault()
+                        //  alert("Login successfull");
+                            this.$router.push('Dashboard')
+
+                        // this.$router.push({ name: "Dashboard" });
+                        //   e.preventDefault()
                         //  this.$router.replace({ name: "Dashboard" });
                 }
                 else{
@@ -51,7 +53,7 @@ export default{
                 //  e.preventDefault()
                 this.error = "A username and password must be present";
             }
-
+              
             
         }
 
