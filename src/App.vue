@@ -34,7 +34,7 @@
   color: #42b983;
 }
 </style>
-// <script>
+ <script>
 
 
 // export default {
@@ -47,3 +47,19 @@
   // }
 // };
 // </script>
+
+export default {
+  name: 'App',
+  methods: {
+    getList() {
+      this.axios.get(api).then((response) => {
+        console.log(response.data)
+      })
+      // or
+      this.$http.get(api).then((response) => {
+        console.log(response.data)
+      })
+    }
+  }
+}
+</script>

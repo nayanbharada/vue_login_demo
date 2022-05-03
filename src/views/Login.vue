@@ -37,12 +37,9 @@ export default{
             if (this.username != "" && this.password != ""){
 
                 if(this.username == "nayan" && this.password == "Nayan@123"){
-                        //  alert("Login successfull");
-                            this.$router.push('Dashboard')
-
+                        // this.$router.push('Dashboard')
                         // this.$router.push({ name: "Dashboard" });
-                        //   e.preventDefault()
-                        //  this.$router.replace({ name: "Dashboard" });
+                         this.$router.replace({ name: "Dashboard" });
                 }
                 else{
                    
