@@ -34,32 +34,15 @@
   color: #42b983;
 }
 </style>
- <script>
-
-
-// export default {
-//   name: "App",
-
-  //  computed:{
-  //   isLoading(){
-  //     return this.$store.state.loadingCounter !== 0
-  //   }
-  // }
-// };
-// </script>
+<script>
 
 export default {
-  name: 'App',
-  methods: {
-    getList() {
-      this.axios.get(api).then((response) => {
-        console.log(response.data)
-      })
-      // or
-      this.$http.get(api).then((response) => {
-        console.log(response.data)
-      })
+  name: "App",
+  computed:{
+    isLoading(){
+      return this.$store.state.loadingCounter !== 0
     }
   }
 }
 </script>
+

@@ -40,7 +40,6 @@ const routes = [
     name: 'Dashboard',
     component: lazyLoad("Dashboard"), 
   }
-
 ]
 
 const router = createRouter({
