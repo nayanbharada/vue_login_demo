@@ -39,6 +39,11 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: lazyLoad("Dashboard"), 
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: lazyLoad("Profile")
   }
 ]
 

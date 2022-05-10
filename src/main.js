@@ -1,7 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import { createPinia } from 'pinia'
+// import { createPinia } from 'pinia'
+import store from '@/store'
 // import store from "./store";
 // import * as Vue from 'vue' // in Vue 3
 // import axios from 'axios'
@@ -15,7 +16,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // createApp(App).use(router).use(store).use(axios).mount('#app')
 // createApp(App).use(router).use(createPinia()).mount('#app')
 const app = createApp(App)
-app.use(createPinia())
+// app.use(createPinia())s
 app.use(router)
+app.use(store)
 app.mount('#app')
 
