@@ -44,6 +44,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: lazyLoad("Profile")
+  },
+  {
+    path: '/tutoriallist',
+    name: 'TutorialsList',
+    component: lazyLoad("TutorialsList")
   }
 ]
 
